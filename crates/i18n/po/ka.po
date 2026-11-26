@@ -289,7 +289,7 @@ msgstr ".pst ფაილი ({format})"
 #: crates/ui-egui/src/ribbon.rs
 #, fuzzy
 msgid "1 Line"
-msgstr "1 ხაზი"
+msgstr "1 სტრიქონი"
 
 #. interface
 #: crates/ui-egui/src/reminders.rs
@@ -355,7 +355,7 @@ msgstr "15 წუთი"
 #: crates/ui-egui/src/ribbon.rs
 #, fuzzy
 msgid "2 Lines"
-msgstr "2 ხაზი"
+msgstr "2 სტრიქონი"
 
 #. android, interface, name
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/Accounts.kt apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/SettingsModel.kt crates/model/src/offline.rs crates/ui-egui/src/keep_offline.rs
@@ -385,7 +385,7 @@ msgstr "24-საათიანი (15:05)"
 #: crates/ui-egui/src/ribbon.rs
 #, fuzzy
 msgid "3 Lines"
-msgstr "3 ხაზი"
+msgstr "3 სტრიქონი"
 
 #. android, interface, name
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/SettingsModel.kt crates/model/src/offline.rs crates/ui-egui/src/keep_offline.rs
@@ -547,7 +547,7 @@ msgstr "კონკრეტული თარიღი"
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "A desktop alert for the mail this rule acts on as it arrives, while MailCraft isn't the window in front, even when the one for new mail is off in File › Options"
-msgstr "სამუშაო მაგიდის შეტყობინება ფოსტისთვის, რომელზეც ეს წესი მოქმედებს მისვლისას, როცა MailCraft წინა ფანჯარა არ არის, მაშინაც კი, როცა ახალი ფოსტის შეტყობინება გამორთულია ფაილი › პარამეტრებში"
+msgstr "სამუშაო მაგიდის შეტყობინება იმ ფოსტისთვის, რომელზეც ეს წესი მისვლისას მოქმედებს, როცა MailCraft წინა პლანზე არ არის, მაშინაც კი, როცა ახალი ფოსტის შეტყობინება გამორთულია (ფაილი › პარამეტრები)"
 
 #. android
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/ShareLoad.kt
@@ -751,7 +751,7 @@ msgstr "წესს სჭირდება სახელი და სა�
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "A rule needs something to do: an action, or a desktop alert."
-msgstr "წესს სჭირდება, რომ რამე გააკეთოს: ქმედება ან სამუშაო მაგიდის შეტყობინება."
+msgstr "წესმა რამე უნდა გააკეთოს: შეასრულოს ქმედება ან აჩვენოს სამუშაო მაგიდის შეტყობინება."
 
 #. android
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/CalendarEditor.kt
@@ -823,7 +823,7 @@ msgstr "ვებმისამართი, ელფოსტის მის
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "A word to look for is at most 200 characters."
-msgstr "საძიებო სიტყვა არაუმეტეს 200 სიმბოლოა."
+msgstr "საძიებო სიტყვა 200 სიმბოლოზე გრძელი არ უნდა იყოს."
 
 #. date and time, interface
 #: crates/i18n/src/date.rs crates/ui-egui/src/calendar_view.rs
@@ -1363,8 +1363,9 @@ msgstr "დღის წესრიგი"
 
 #. command label
 #: crates/engine/src/cmd/format.rs
+#, fuzzy
 msgid "Align Text"
-msgstr ""
+msgstr "ტექსტის სწორება"
 
 #. android, interface, name
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/MailListModel.kt crates/engine/src/session.rs crates/model/src/offline.rs crates/ui-egui/src/advanced_search.rs crates/ui-egui/src/backstage.rs crates/ui-egui/src/keep_offline.rs
@@ -1944,7 +1945,7 @@ msgstr "კატეგორიების გაგზავნილი ც�
 #: crates/engine/src/cmd/contacts_remote.rs
 #, fuzzy
 msgid "Apply Sent Contact Changes"
-msgstr "გაგზავნილი კონტაქტის ცვლილებების გამოყენება"
+msgstr "კონტაქტების გაგზავნილი ცვლილებების გამოყენება"
 
 #. command label
 #: crates/engine/src/cmd/rules_remote.rs
@@ -2242,7 +2243,7 @@ msgstr "გარკვეულ თარიღსა და დროს"
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/PersonEditor.kt
 #, fuzzy
 msgid "At most 20 entries in each list."
-msgstr "თითოეულ სიაში მაქსიმუმ 20 ჩანაწერია."
+msgstr "თითოეულ სიაში შეიძლება იყოს არაუმეტეს 20 ელემენტი."
 
 #. what a command says
 #: crates/engine/src/cmd/people_merge.rs
@@ -2938,7 +2939,7 @@ msgstr "დარეკვა"
 #: crates/ui-egui/src/address_book.rs
 #, fuzzy
 msgid "Can only be read"
-msgstr "მხოლოდ წაკითხვა შეიძლება"
+msgstr "მხოლოდ წასაკითხი"
 
 #. android
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/AttachmentsView.kt
@@ -3020,7 +3021,7 @@ msgstr "გავაუქმო ეს შეხვედრა?"
 #: crates/ui-egui/src/dialogs.rs
 #, fuzzy
 msgid "Cancellations from the server of {account}:"
-msgstr "გაუქმებები {account}-ის სერვერიდან:"
+msgstr "გაუქმებები ანგარიშის {account} სერვერიდან:"
 
 #. android, interface
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/CalendarEditor.kt apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/CalendarScreen.kt apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/CalendarSpeech.kt crates/ui-egui/src/calendar_view.rs
@@ -3406,7 +3407,7 @@ msgstr "განახლებების შემოწმება"
 #: crates/ui-egui/src/ribbon.rs
 #, fuzzy
 msgid "Check for new fonts"
-msgstr "Check for new fonts"
+msgstr "ახალი შრიფტების შემოწმება"
 
 #. interface
 #: crates/ui-egui/src/updates.rs
@@ -3668,8 +3669,9 @@ msgstr "გაცვლის ბუფერი"
 
 #. interface
 #: crates/ui-egui/src/backstage.rs
+#, fuzzy
 msgid "Clock"
-msgstr ""
+msgstr "საათი"
 
 #. android, interface, ribbon
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/AttachmentsView.kt apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/CalendarEditor.kt apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/IncomingLayers.kt crates/ui-egui/src/account_setup.rs crates/ui-egui/src/account_setup/exchange.rs crates/ui-egui/src/compose.rs crates/ui-egui/src/dialogs.rs crates/ui-egui/src/find_replace.rs crates/ui-egui/src/folder_properties.rs crates/ui-egui/src/forms.rs crates/ui-egui/src/import_pst.rs crates/ui-egui/src/meeting_dialogs.rs crates/ui-egui/src/meeting_dialogs/share.rs crates/ui-egui/src/merge_contacts.rs crates/ui-egui/src/reminders.rs crates/ui-egui/src/report_problem.rs crates/ui-egui/src/ribbon.rs crates/ui-egui/src/symbol.rs crates/ui-egui/src/sync_panel.rs crates/ui-egui/src/tasks_view.rs crates/ui-egui/src/view_source.rs
@@ -3937,7 +3939,7 @@ msgstr "საკონტაქტო ბარათი"
 #: crates/engine/src/cmd/contacts_remote.rs
 #, fuzzy
 msgid "Contact Changes to Send"
-msgstr "გასაგზავნი კონტაქტის ცვლილებები"
+msgstr "კონტაქტების გასაგზავნი ცვლილებები"
 
 #. interface
 #: crates/ui-egui/src/address_book.rs crates/ui-egui/src/check_names.rs crates/ui-egui/src/forms.rs
@@ -5357,7 +5359,7 @@ msgstr "ყოველი ანგარიშის ხელმოწერ�
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "Each condition and exception needs something to look for."
-msgstr "ყოველ პირობასა და გამონაკლისს სჭირდება, რომ რამე ეძებოს."
+msgstr "ყოველ პირობასა და გამონაკლისში მიუთითეთ, რას ეძებს."
 
 #. interface
 #: crates/ui-egui/src/auto_replies.rs
@@ -5507,7 +5509,7 @@ msgstr "ელფოსტის მისამართი (არასავ
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/PersonEditor.kt
 #, fuzzy
 msgid "Email addresses, one per line"
-msgstr "ელფოსტის მისამართები, თითო ხაზზე"
+msgstr "ელფოსტის მისამართები, თითო სტრიქონზე"
 
 #. ribbon
 #: crates/ui-egui/src/ribbon.rs
@@ -6053,7 +6055,7 @@ msgstr "დროის ძებნა"
 #: crates/ui-egui/src/ribbon.rs
 #, fuzzy
 msgid "Find a font"
-msgstr "Find a font"
+msgstr "შრიფტის ძებნა"
 
 #. interface
 #: crates/ui-egui/src/spelling.rs
@@ -7857,7 +7859,7 @@ msgstr "გამოგონილი ფოსტა, შეხვედრე
 #: crates/ui-egui/src/dialogs.rs
 #, fuzzy
 msgid "Invitations from the server of {account}:"
-msgstr "მოწვევები {account}-ის სერვერიდან:"
+msgstr "მოწვევები ანგარიშის {account} სერვერიდან:"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
@@ -8291,7 +8293,7 @@ msgstr "ამის შენარჩუნება"
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/PersonEditor.kt
 #, fuzzy
 msgid "Keep this person in"
-msgstr "სად შეინახოს ეს პირი"
+msgstr "სად შევინახოთ ეს ადამიანი"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
@@ -8375,13 +8377,13 @@ msgstr "ინახება: {folder}"
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/PersonPlaces.kt
 #, fuzzy
 msgid "Kept in: {place}"
-msgstr "სად ინახება: {place}"
+msgstr "ინახება: {place}"
 
 #. android
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/PersonPlaces.kt
 #, fuzzy
 msgid "Kept in: {place} (read only)"
-msgstr "სად ინახება: {place} (მხოლოდ წასაკითხად)"
+msgstr "ინახება: {place} (მხოლოდ წასაკითხი)"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
@@ -8741,7 +8743,7 @@ msgstr "სერვერის სერტიფიკატის შემ�
 #: crates/ui-egui/src/ribbon.rs
 #, fuzzy
 msgid "Looking for fonts…"
-msgstr "Looking for fonts…"
+msgstr "შრიფტების ძებნა…"
 
 #. interface
 #: crates/ui-egui/src/reading/invitation.rs
@@ -9047,7 +9049,7 @@ msgstr "MailCraft ჯერ არ უჭერს მხარს POP-ს. ს�
 #: crates/ui-egui/src/dav_job.rs
 #, fuzzy
 msgid "MailCraft holds as much from the calendar server of {account} as it can: some calendars or events were left out."
-msgstr "MailCraft ინახავს {account}-ის კალენდრის სერვერიდან იმდენს, რამდენსაც შეუძლია: ზოგიერთი კალენდარი ან მოვლენა გამოტოვებულია."
+msgstr "MailCraft ინახავს იმდენს, რამდენსაც ახერხებს, ანგარიშის {account} კალენდრის სერვერიდან: ზოგიერთი კალენდარი ან ღონისძიება გამოტოვებულია."
 
 #. interface
 #: crates/ui-egui/src/software.rs
@@ -9541,7 +9543,7 @@ msgstr "წერილის წინასწარი ხედი"
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/ReadingToolbar.kt
 #, fuzzy
 msgid "Message menu"
-msgstr "შეტყობინების მენიუ"
+msgstr "წერილის მენიუ"
 
 #. android
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/ComposeHost.kt
@@ -10219,25 +10221,25 @@ msgstr "ჩემი დავალებები"
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "My address is in Cc"
-msgstr "ჩემი მისამართი არის „ასლში“"
+msgstr "ჩემი მისამართი ველშია „ასლი“"
 
 #. name
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "My address is in To"
-msgstr "ჩემი მისამართი არის „ვისში“"
+msgstr "ჩემი მისამართი ველშია „ვის“"
 
 #. name
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "My address is in To or Cc"
-msgstr "ჩემი მისამართი არის „ვისში“ ან „ასლში“"
+msgstr "ჩემი მისამართი ველშია „ვის“ ან „ასლი“"
 
 #. name
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "My address isn't in To"
-msgstr "ჩემი მისამართი არ არის „ვისში“"
+msgstr "ჩემი მისამართი ველში „ვის“ არ არის"
 
 #. interface
 #: crates/ui-egui/src/account_setup/help.rs
@@ -10593,7 +10595,7 @@ msgstr "ახალი წერილები"
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/PeopleScreen.kt apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/PersonEditor.kt
 #, fuzzy
 msgid "New person"
-msgstr "ახალი პიროვნება"
+msgstr "ახალი ადამიანი"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
@@ -10611,7 +10613,7 @@ msgstr "ახალი დავალება"
 #: crates/ui-egui/src/dialogs.rs
 #, fuzzy
 msgid "New times from the server of {account}:"
-msgstr "ახალი დროები {account}-ის სერვერიდან:"
+msgstr "ახალი დროები ანგარიშის {account} სერვერიდან:"
 
 #. interface
 #: crates/ui-egui/src/mail_view.rs
@@ -11185,7 +11187,7 @@ msgstr "არავინ შედის"
 #: crates/ui-egui/src/dialogs.rs
 #, fuzzy
 msgid "Nobody is written to about:"
-msgstr "არავის ეწერება შემდეგზე:"
+msgstr "არავის ეგზავნება წერილი შემდეგის შესახებ:"
 
 #. interface
 #: crates/ui-egui/src/people_view.rs
@@ -11809,7 +11811,7 @@ msgstr "სერიის ერთი დღე სერიის დან�
 #: crates/engine/src/cmd/calendar/selection.rs
 #, fuzzy
 msgid "One occurrence of a series can't be moved to another calendar than the rest of the series. Cut the whole series, or copy this day instead."
-msgstr "სერიის ერთი შემთხვევა ვერ გადავა სხვა კალენდარში, ვიდრე სერიის დანარჩენი ნაწილი. ამოჭერით მთელი სერია, ან ამის ნაცვლად დააკოპირეთ ეს დღე."
+msgstr "სერიის ერთ დღეს ვერ გადაიტანთ სხვა კალენდარში, სერიის დანარჩენი ნაწილისგან განცალკევებით. ამოჭერით მთელი სერია ან, ამის ნაცვლად, დააკოპირეთ ეს დღე."
 
 #. interface
 #: crates/ui-egui/src/forms.rs
@@ -12173,7 +12175,7 @@ msgstr "ღია კოდი MIT ლიცენზიით ან Apache Lic
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/MovePerson.kt crates/ui-egui/src/move_contacts.rs
 #, fuzzy
 msgid "Open that one"
-msgstr "იმის გახსნა"
+msgstr "არსებულის გახსნა"
 
 #. interface
 #: crates/ui-egui/src/calendar_view.rs
@@ -12695,7 +12697,7 @@ msgstr "ტელეფონი"
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/PersonEditor.kt
 #, fuzzy
 msgid "Phone numbers, one per line"
-msgstr "ტელეფონის ნომრები, თითო ხაზზე"
+msgstr "ტელეფონის ნომრები, თითო სტრიქონზე"
 
 #. android, interface
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/TaskEditorScreen.kt crates/ui-egui/src/forms.rs
@@ -13033,7 +13035,7 @@ msgstr "პირადი"
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/AttachmentsView.kt crates/ui-egui/src/attachment_open.rs
 #, fuzzy
 msgid "Programs that open files like this act on what is in them: they can show web content in it, or take in the keys and certificates it holds. Open it only if you know who sent it and expect it."
-msgstr "პროგრამები, რომლებიც ასეთ ფაილებს ხსნიან, მათ შიგთავსზე მოქმედებენ: შეუძლიათ აჩვენონ მასში არსებული ვებშიგთავსი ან მიიღონ მასში შენახული გასაღებები და სერტიფიკატები. გახსენით მხოლოდ მაშინ, თუ იცით, ვინ გამოგზავნა და მას ელოდებით."
+msgstr "პროგრამები, რომლებიც ასეთ ფაილებს ხსნიან, მათ შიგთავსზე მოქმედებენ: შეუძლიათ აჩვენონ მასში არსებული ვებშიგთავსი ან დააიმპორტონ მასში შენახული გასაღებები და სერტიფიკატები. გახსენით მხოლოდ მაშინ, თუ იცით, ვინ გამოგზავნა და მას ელოდებით."
 
 #. interface
 #: crates/ui-egui/src/nav.rs
@@ -13147,7 +13149,7 @@ msgstr "იისფერი"
 #: crates/ui-egui/src/i18n.rs
 #, fuzzy
 msgid "Purple category"
-msgstr "მეწამული კატეგორია"
+msgstr "იისფერი კატეგორია"
 
 #. interface
 #: crates/ui-egui/src/import_pst.rs
@@ -15395,7 +15397,7 @@ msgstr "იგზავნება ისე, როგორც დაწე�
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "Sent only to me"
-msgstr "მხოლოდ მე გამომიგზავნეს"
+msgstr "გამოგზავნილია მხოლოდ ჩემთვის"
 
 #. name
 #: crates/ui-egui/src/forms.rs
@@ -15741,7 +15743,7 @@ msgstr "სასწავლო მასალის ჩვენება"
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "Show a desktop alert"
-msgstr "სამუშაო მაგიდის შეტყობინების ჩვენება"
+msgstr "სამუშაო მაგიდაზე შეტყობინების ჩვენება"
 
 #. interface
 #: crates/ui-egui/src/alerts.rs
@@ -16415,13 +16417,13 @@ msgstr "ძიების ნაწილი ამ კომპიუტერ
 #: crates/ui-egui/src/calendar_view.rs
 #, fuzzy
 msgid "Some of these are in the calendars shown where the time was picked and some are in others: paste them in two goes, so that each lands in the calendar you mean."
-msgstr "ზოგი მათგანი იმ კალენდრებშია, რომლებიც იქ ჩანს, სადაც დრო აირჩიეს, ზოგი კი სხვებში: ჩასვით ორ ეტაპად, რომ თითოეული თქვენთვის სასურველ კალენდარში მოხვდეს."
+msgstr "ზოგი მათგანი იმ კალენდრებშია, რომლებიც იქ ჩანს, სადაც დრო აირჩიეთ, ზოგი კი სხვებში: ჩასვით ორ ეტაპად, რომ თითოეული თქვენთვის სასურველ კალენდარში მოხვდეს."
 
 #. what a command says
 #: crates/engine/src/cmd/calendar/selection.rs
 #, fuzzy
 msgid "Some of these invite the people to a new meeting and some tell them of a change: cut them one at a time, so that each is asked about on its own. Nothing was changed."
-msgstr "ზოგი მათგანი ხალხს ახალ შეხვედრაზე იწვევს, ზოგი კი ცვლილებას ატყობინებს: ამოჭერით სათითაოდ, რომ თითოეულზე ცალკე გკითხოთ. არაფერი შეცვლილა."
+msgstr "ზოგი მათგანი მონაწილეებს ახალ შეხვედრაზე იწვევს, ზოგი კი ცვლილებას ატყობინებს: ამოჭერით სათითაოდ, რომ თითოეულზე ცალკე გკითხოთ. არაფერი შეცვლილა."
 
 #. interface
 #: crates/ui-egui/src/meeting_dialogs.rs crates/ui-egui/src/reading/invitation.rs
@@ -16451,7 +16453,7 @@ msgstr "რაღაც ვერ გავიდა ან ისე არ მ
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/ReadingToolbar.kt
 #, fuzzy
 msgid "Sort"
-msgstr "დახარისხება"
+msgstr "სორტირება"
 
 #. interface
 #: crates/ui-egui/src/credits.rs
@@ -17213,7 +17215,7 @@ msgstr "ეს ვერ შესრულდა."
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/Hosted.kt
 #, fuzzy
 msgid "That could not be moved."
-msgstr "ვერ გადაიტანა."
+msgstr "მისი გადატანა ვერ მოხერხდა."
 
 #. android
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/Hosted.kt
@@ -17543,7 +17545,7 @@ msgstr "კალენდარი „{name}“ ინტერნეტში 
 #: crates/engine/src/cmd/remote.rs
 #, fuzzy
 msgid "The calendar \"{name}\" is on a calendar server: this version reads it but can't send changes to it yet."
-msgstr "კალენდარი \"{name}\" კალენდრის სერვერზეა: ეს ვერსია მას კითხულობს, მაგრამ ცვლილებების გაგზავნა ჯერ არ შეუძლია."
+msgstr "კალენდარი „{name}“ კალენდრის სერვერზეა: ეს ვერსია მას კითხულობს, მაგრამ ცვლილებების გაგზავნა ჯერ არ შეუძლია."
 
 #. what a command says
 #: crates/engine/src/cmd/remote.rs
@@ -17687,19 +17689,19 @@ msgstr ""
 #: crates/ui-egui/src/dav_job.rs
 #, fuzzy
 msgid "The calendar server of {account} answered with errors, so some events may be out of date. MailCraft will try again later."
-msgstr "{account}-ის კალენდრის სერვერმა შეცდომებით უპასუხა, ამიტომ ზოგიერთი მოვლენა შეიძლება მოძველებული იყოს. MailCraft მოგვიანებით კვლავ სცდის."
+msgstr "ანგარიშის {account} კალენდრის სერვერმა შეცდომებით უპასუხა, ამიტომ ზოგიერთი ღონისძიება შეიძლება მოძველებული იყოს. MailCraft მოგვიანებით კვლავ სცდის."
 
 #. interface
 #: crates/ui-egui/src/dav_job.rs
 #, fuzzy
 msgid "The calendar server of {account} has a certificate that isn't trusted, so nothing was sent to it."
-msgstr "{account}-ის კალენდრის სერვერს აქვს სერტიფიკატი, რომელსაც არ ენდობიან, ამიტომ მას არაფერი გაეგზავნა."
+msgstr "ანგარიშის {account} კალენდრის სერვერის სერტიფიკატი სანდო არ არის, ამიტომ მას არაფერი გაეგზავნა."
 
 #. interface
 #: crates/ui-egui/src/dav_job.rs
 #, fuzzy
 msgid "The calendar server of {account} wouldn't sign in. MailCraft will try again later, or when the password changes."
-msgstr "{account}-ის კალენდრის სერვერმა შესვლა არ დაუშვა. MailCraft მოგვიანებით ან პაროლის შეცვლისას კვლავ სცდის."
+msgstr "ანგარიშის {account} კალენდრის სერვერმა შესვლა არ დაუშვა. MailCraft მოგვიანებით ან პაროლის შეცვლისას კვლავ სცდის."
 
 #. interface
 #: crates/ui-egui/src/dialogs.rs
@@ -17799,7 +17801,7 @@ msgstr "კავშირის შემოწმება მხოლოდ 
 #: crates/engine/src/sync_driver/calendar_plan.rs
 #, fuzzy
 msgid "The contact changes sent couldn't be noted: {error}"
-msgstr "გაგზავნილი კონტაქტების ცვლილებების აღნიშვნა ვერ მოხერხდა: {error}"
+msgstr "კონტაქტების გაგზავნილი ცვლილებები ვერ აღირიცხა: {error}"
 
 #. what a command says
 #: crates/engine/src/cmd/people_merge.rs
@@ -17835,7 +17837,7 @@ msgstr "კონტაქტების ჩაწერა ვერ მოხ
 #: crates/engine/src/cmd/contacts_remote.rs
 #, fuzzy
 msgid "The contacts folder \"{name}\" can only be read: a new contact can't be put there."
-msgstr "კონტაქტების საქაღალდე „{name}“ მხოლოდ წაკითხვადია: იქ ახალი კონტაქტის დამატება შეუძლებელია."
+msgstr "კონტაქტების საქაღალდე „{name}“ მხოლოდ წასაკითხია: იქ ახალი კონტაქტის დამატება შეუძლებელია."
 
 #. what a command says
 #: crates/engine/src/cmd/contacts_move.rs
@@ -17853,7 +17855,7 @@ msgstr "კონტაქტების საქაღალდე „{name}�
 #: crates/engine/src/cmd/contacts_remote.rs
 #, fuzzy
 msgid "The contacts folder \"{name}\" can only be read: this contact can't be changed or deleted here."
-msgstr "კონტაქტების საქაღალდე „{name}“ მხოლოდ წაკითხვადია: ამ კონტაქტის აქ შეცვლა ან წაშლა შეუძლებელია."
+msgstr "კონტაქტების საქაღალდე „{name}“ მხოლოდ წასაკითხია: ამ კონტაქტის აქ შეცვლა ან წაშლა შეუძლებელია."
 
 #. interface
 #: crates/ui-egui/src/merge_contacts.rs
@@ -18401,7 +18403,7 @@ msgstr "გვერდი დაიხურა, ან შესვლის �
 #: crates/ui-egui/src/calendar_view.rs
 #, fuzzy
 msgid "The paste asks for more, and this route never asks: nothing was moved"
-msgstr "ჩასმას მეტი სჭირდება, ეს გზა კი არასდროს კითხულობს: არაფერი გადატანილა"
+msgstr "ჩასმას დამატებითი პასუხი სჭირდება, ეს გზა კი არასდროს კითხულობს: არაფერი გადატანილა"
 
 #. interface
 #: crates/ui-egui/src/calendar_view.rs
@@ -18713,24 +18715,24 @@ msgstr "სერვერი დაკავებულია. სცადე
 #, fuzzy
 msgid "The server of {account} sends the {n} person invited the invitation by mail."
 msgid_plural "The server of {account} sends the {n} people invited the invitation by mail."
-msgstr[0] "{account}-ის სერვერი მოწვევას ფოსტით უგზავნის მოწვეულ პირებს ({n})."
-msgstr[1] "{account}-ის სერვერი მოწვევას ფოსტით უგზავნის მოწვეულ პირებს ({n})."
+msgstr[0] "ანგარიშის {account} სერვერი მოწვევას ფოსტით უგზავნის მოწვეულ ადამიანებს ({n})."
+msgstr[1] "ანგარიშის {account} სერვერი მოწვევას ფოსტით უგზავნის მოწვეულ ადამიანებს ({n})."
 
 #. interface
 #: crates/ui-egui/src/dialogs.rs
 #, fuzzy
 msgid "The server of {account} tells the {n} person invited of the new time."
 msgid_plural "The server of {account} tells the {n} people invited of the new time."
-msgstr[0] "{account}-ის სერვერი მოწვეულ პირებს ({n}) ახალ დროს ატყობინებს."
-msgstr[1] "{account}-ის სერვერი მოწვეულ პირებს ({n}) ახალ დროს ატყობინებს."
+msgstr[0] "ანგარიშის {account} სერვერი მოწვეულ ადამიანებს ({n}) ახალ დროს ატყობინებს."
+msgstr[1] "ანგარიშის {account} სერვერი მოწვეულ ადამიანებს ({n}) ახალ დროს ატყობინებს."
 
 #. interface
 #: crates/ui-egui/src/dialogs.rs
 #, fuzzy
 msgid "The server of {account} tells the {n} person invited, so that they know it is cancelled."
 msgid_plural "The server of {account} tells the {n} people invited, so that they know it is cancelled."
-msgstr[0] "{account}-ის სერვერი მოწვეულ პირებს ({n}) ატყობინებს, რომ იცოდნენ, რომ გაუქმდა."
-msgstr[1] "{account}-ის სერვერი მოწვეულ პირებს ({n}) ატყობინებს, რომ იცოდნენ, რომ გაუქმდა."
+msgstr[0] "ანგარიშის {account} სერვერი მოწვეულ ადამიანებს ({n}) ატყობინებს, რომ შეხვედრა გაუქმდა."
+msgstr[1] "ანგარიშის {account} სერვერი მოწვეულ ადამიანებს ({n}) ატყობინებს, რომ შეხვედრა გაუქმდა."
 
 #. interface
 #: crates/ui-egui/src/account_setup/exchange.rs
@@ -18845,24 +18847,24 @@ msgstr "ქვემოთ მოცემული სერვერები 
 #, fuzzy
 msgid "The servers of the accounts named below send the {n} person invited the invitation by mail."
 msgid_plural "The servers of the accounts named below send the {n} people invited the invitation by mail."
-msgstr[0] "ქვემოთ დასახელებული ანგარიშების სერვერები მოწვევას ფოსტით უგზავნიან მოწვეულ პირებს ({n})."
-msgstr[1] "ქვემოთ დასახელებული ანგარიშების სერვერები მოწვევას ფოსტით უგზავნიან მოწვეულ პირებს ({n})."
+msgstr[0] "ქვემოთ დასახელებული ანგარიშების სერვერები მოწვევას ფოსტით უგზავნიან მოწვეულ ადამიანებს ({n})."
+msgstr[1] "ქვემოთ დასახელებული ანგარიშების სერვერები მოწვევას ფოსტით უგზავნიან მოწვეულ ადამიანებს ({n})."
 
 #. interface
 #: crates/ui-egui/src/dialogs.rs
 #, fuzzy
 msgid "The servers of the accounts named below tell the {n} person invited of the new time."
 msgid_plural "The servers of the accounts named below tell the {n} people invited of the new time."
-msgstr[0] "ქვემოთ დასახელებული ანგარიშების სერვერები მოწვეულ პირებს ({n}) ახალ დროს ატყობინებენ."
-msgstr[1] "ქვემოთ დასახელებული ანგარიშების სერვერები მოწვეულ პირებს ({n}) ახალ დროს ატყობინებენ."
+msgstr[0] "ქვემოთ დასახელებული ანგარიშების სერვერები მოწვეულ ადამიანებს ({n}) ახალ დროს ატყობინებენ."
+msgstr[1] "ქვემოთ დასახელებული ანგარიშების სერვერები მოწვეულ ადამიანებს ({n}) ახალ დროს ატყობინებენ."
 
 #. interface
 #: crates/ui-egui/src/dialogs.rs
 #, fuzzy
 msgid "The servers of the accounts named below tell the {n} person invited, so that they know it is cancelled."
 msgid_plural "The servers of the accounts named below tell the {n} people invited, so that they know it is cancelled."
-msgstr[0] "ქვემოთ დასახელებული ანგარიშების სერვერები მოწვეულ პირებს ({n}) ატყობინებენ, რომ იცოდნენ, რომ გაუქმდა."
-msgstr[1] "ქვემოთ დასახელებული ანგარიშების სერვერები მოწვეულ პირებს ({n}) ატყობინებენ, რომ იცოდნენ, რომ გაუქმდა."
+msgstr[0] "ქვემოთ დასახელებული ანგარიშების სერვერები მოწვეულ ადამიანებს ({n}) ატყობინებენ, რომ შეხვედრა გაუქმდა."
+msgstr[1] "ქვემოთ დასახელებული ანგარიშების სერვერები მოწვეულ ადამიანებს ({n}) ატყობინებენ, რომ შეხვედრა გაუქმდა."
 
 #. interface
 #: crates/ui-egui/src/settings_notice.rs
@@ -19588,7 +19590,7 @@ msgstr "ეს კონტაქტი სამუდამოდ წაიშ
 #: crates/ui-egui/src/people_view.rs
 #, fuzzy
 msgid "This contacts folder can only be read, so this contact can't be edited or deleted here. Favorite is kept on this computer."
-msgstr "კონტაქტების ეს საქაღალდე მხოლოდ წაკითხვადია, ამიტომ ამ კონტაქტის აქ რედაქტირება ან წაშლა შეუძლებელია. რჩეული ამ კომპიუტერზე ინახება."
+msgstr "კონტაქტების ეს საქაღალდე მხოლოდ წასაკითხია, ამიტომ ამ კონტაქტის აქ რედაქტირება ან წაშლა შეუძლებელია. რჩეული ამ კომპიუტერზე ინახება."
 
 #. interface
 #: crates/ui-egui/src/updates.rs
@@ -20238,7 +20240,7 @@ msgstr "MailCraft-ის ამ ვერსიას მისამართ�
 #: crates/ui-egui/src/calendar_view.rs
 #, fuzzy
 msgid "This was copied from another mailbox than the one open now"
-msgstr "ეს დაკოპირდა სხვა საფოსტო ყუთიდან, ვიდრე ახლა ღიაა"
+msgstr "ეს სხვა საფოსტო ყუთიდან დაკოპირდა და არა იმ ყუთიდან, რომელიც ახლა ღიაა"
 
 #. what a command says
 #: crates/engine/src/cmd/remote.rs
@@ -20462,7 +20464,7 @@ msgstr "ჩემთვის"
 #: crates/ui-egui/src/attachment_open.rs
 #, fuzzy
 msgid "To open an attachment, MailCraft first asks the desktop what kind of file it is, and neither gio (from GLib) nor kmimetypefinder (from KDE) is installed. Install one of them, or save the attachment with Save As."
-msgstr "დანართის გასახსნელად MailCraft ჯერ სამუშაო გარემოს ეკითხება, რა ტიპის ფაილია, მაგრამ არც gio (GLib-იდან) და არც kmimetypefinder (KDE-დან) არ არის დაყენებული. დააყენეთ ერთ-ერთი, ან შეინახეთ დანართი ბრძანებით „შენახვა როგორც“."
+msgstr "დანართის გასახსნელად MailCraft ჯერ სამუშაო გარემოს ეკითხება, რა ტიპის ფაილია, მაგრამ არც gio (GLib-იდან) და არც kmimetypefinder (KDE-დან) არ არის დაინსტალირებული. დააინსტალირეთ ერთ-ერთი, ან შეინახეთ დანართი ბრძანებით „შენახვა როგორც“."
 
 #. interface
 #: crates/ui-egui/src/server_sync.rs
@@ -21296,7 +21298,7 @@ msgstr "რა შედის ამ აპლიკაციაში და �
 #: crates/ui-egui/src/calendar_view.rs
 #, fuzzy
 msgid "What is on the system's clipboard isn't this appointment"
-msgstr "სისტემის ბუფერში რაც არის, ეს ჩანაწერი არ არის"
+msgstr "სისტემის გაცვლის ბუფერში ეს ჩანაწერი არ არის"
 
 #. interface
 #: crates/ui-egui/src/backstage.rs
@@ -22260,7 +22262,7 @@ msgstr "კონტაქტის ბარათი მაქსიმუმ 
 #: crates/engine/src/cmd/calendar/selection.rs
 #, fuzzy
 msgid "a day of the series is needed to move one of its occurrences"
-msgstr "სერიის ერთი შემთხვევის გადასატანად საჭიროა სერიის დღე"
+msgstr "სერიის ერთი დღის გადასატანად მიუთითეთ სერიის დღე"
 
 #. what a command says
 #: crates/model/src/mailbox_followup.rs
@@ -22645,7 +22647,7 @@ msgstr "გაუქმებულია"
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "categorize it as {category}"
-msgstr "მიენიჭოს კატეგორია {category}"
+msgstr "კატეგორიის მინიჭება: {category}"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
@@ -22705,25 +22707,25 @@ msgstr "კავშირის პრობლემა: {reason}"
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "copy it to a folder"
-msgstr "დაკოპირება საქაღალდეში"
+msgstr "საქაღალდეში კოპირება"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "copy it to a folder that is gone"
-msgstr "დაკოპირება საქაღალდეში, რომელიც აღარ არსებობს"
+msgstr "კოპირება საქაღალდეში, რომელიც აღარ არსებობს"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "copy it to {folder}"
-msgstr "დაკოპირება: {folder}"
+msgstr "კოპირება: {folder}"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "copy it to {folder} - {who}"
-msgstr "დაკოპირება: {folder} - {who}"
+msgstr "კოპირება: {folder} - {who}"
 
 #. why a mail server couldn't be used
 #: crates/net/src/lib.rs
@@ -22789,25 +22791,25 @@ msgstr "დროშის დასმა"
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "flag it for next week"
-msgstr "დროშის დასმა მომავალი კვირისთვის"
+msgstr "დროშის დასმა შემდეგი კვირის ვადით"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "flag it for this week"
-msgstr "დროშის დასმა ამ კვირისთვის"
+msgstr "დროშის დასმა ამ კვირის ვადით"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "flag it for today"
-msgstr "დროშის დასმა დღევანდელისთვის"
+msgstr "დროშის დასმა დღევანდელი ვადით"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "flag it for tomorrow"
-msgstr "დროშის დასმა ხვალისთვის"
+msgstr "დროშის დასმა ხვალინდელი ვადით"
 
 #. folder name
 #: crates/model/src/mailbox.rs
@@ -22887,7 +22889,7 @@ msgstr "საქაღალდეები ზედმეტად ღრმ�
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "from contains {words}"
-msgstr "გამგზავნი შეიცავს {words}"
+msgstr "„ვისგან“ შეიცავს {words}"
 
 #. interface
 #: crates/ui-egui/src/account_setup/exchange.rs
@@ -22899,7 +22901,7 @@ msgstr "{from} – {to}"
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "from {words}"
-msgstr "გამგზავნი: {words}"
+msgstr "„ვისგან“: {words}"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
@@ -22941,7 +22943,7 @@ msgstr "icloud.com, me.com და mac.com"
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "importance is {level}"
-msgstr "მნიშვნელობა არის {level}"
+msgstr "პრიორიტეტი არის {level}"
 
 #. interface
 #: crates/ui-egui/src/security.rs
@@ -23247,7 +23249,7 @@ msgstr "{max}-ზე მეტი საქაღალდე"
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "move it to a folder"
-msgstr "გადატანა საქაღალდეში"
+msgstr "საქაღალდეში გადატანა"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
@@ -23271,25 +23273,25 @@ msgstr "გადატანა: {folder} - {who}"
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "my address is in Cc"
-msgstr "ჩემი მისამართი არის ასლში"
+msgstr "ჩემი მისამართი ველშია „ასლი“"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "my address is in To"
-msgstr "ჩემი მისამართი არის ადრესატებში"
+msgstr "ჩემი მისამართი ველშია „ვის“"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "my address is in To or Cc"
-msgstr "ჩემი მისამართი არის ადრესატებში ან ასლში"
+msgstr "ჩემი მისამართი ველშია „ვის“ ან „ასლი“"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "my address isn't in To"
-msgstr "ჩემი მისამართი არ არის ადრესატებში"
+msgstr "ჩემი მისამართი ველში „ვის“ არ არის"
 
 #. why a command can't run
 #: crates/engine/src/gmail.rs
@@ -23817,7 +23819,7 @@ msgstr "წარსული"
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "personal"
-msgstr "პირადი"
+msgstr "პერსონალური"
 
 #. what a command says
 #: crates/engine/src/cmd/picture.rs crates/engine/src/cmd/signature.rs
@@ -23829,7 +23831,7 @@ msgstr "ინტერნეტიდან სურათები არ ჩ
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "private"
-msgstr "კერძო"
+msgstr "პირადი"
 
 #. why a command can't run
 #: crates/engine/src/cmd/calendar/invitation.rs
@@ -23841,7 +23843,7 @@ msgstr "მხოლოდ წასაკითხი"
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "received from {from} to {to}"
-msgstr "მიღებულია {from}-დან {to}-მდე"
+msgstr "მიღებულია {from} – {to}"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
@@ -23865,13 +23867,13 @@ msgstr "მიღებულია {day} ან მასზე ადრე"
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "recipient contains {words}"
-msgstr "ადრესატი შეიცავს {words}"
+msgstr "მიმღები შეიცავს {words}"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "recipient's address contains {words}"
-msgstr "ადრესატის მისამართი შეიცავს {words}"
+msgstr "მიმღების მისამართი შეიცავს {words}"
 
 #. what a command says
 #: crates/engine/src/cmd/compose.rs
@@ -23965,7 +23967,7 @@ msgstr "პირადი"
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "sensitivity is {level}"
-msgstr "მგრძნობელობა არის {level}"
+msgstr "კონფიდენციალურობა არის {level}"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
@@ -23983,7 +23985,7 @@ msgstr "გაგზავნილია: {words}"
 #: crates/ui-egui/src/forms.rs
 #, fuzzy
 msgid "set importance to {level}"
-msgstr "მნიშვნელობის დაყენება: {level}"
+msgstr "პრიორიტეტის დაყენება: {level}"
 
 #. android
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/ComposeModel.kt
@@ -24295,7 +24297,7 @@ msgstr "ბრაუზერი საქაღალდეებს ბილ�
 #: crates/ui-egui/src/dialogs.rs
 #, fuzzy
 msgid "the calendar \"{calendar}\" of {account}"
-msgstr "{account}-ის კალენდარი „{calendar}“"
+msgstr "ანგარიშის {account} კალენდარი „{calendar}“"
 
 #. interface
 #: crates/ui-egui/src/dialogs.rs
@@ -24337,13 +24339,13 @@ msgstr "სერტიფიკატი ფოსტისთვის არ 
 #: crates/engine/src/cmd/calendar/selection.rs
 #, fuzzy
 msgid "the changed occurrence has no id"
-msgstr "შეცვლილ შემთხვევას ID არ აქვს"
+msgstr "შეცვლილ დღეს ID არ აქვს"
 
 #. what a command says
 #: crates/engine/src/cmd/calendar/selection.rs
 #, fuzzy
 msgid "the changed occurrence is gone"
-msgstr "შეცვლილი შემთხვევა აღარ არსებობს"
+msgstr "შეცვლილი დღე აღარ არსებობს"
 
 #. interface
 #: crates/ui-egui/src/calendar_sync.rs
@@ -24649,7 +24651,7 @@ msgstr "ქსელმა იქამდე ვერ მიაღწია"
 #: crates/engine/src/cmd/calendar/selection.rs
 #, fuzzy
 msgid "the occurrence was not changed; nothing was moved"
-msgstr "შემთხვევა არ შეცვლილა; არაფერი გადატანილა"
+msgstr "დღე არ შეცვლილა; არაფერი გადატანილა"
 
 #. what a command says
 #: crates/model/src/mailbox.rs
@@ -25207,13 +25209,13 @@ msgstr "მომხმარებლის სახელი ან პარ
 #: crates/ui-egui/src/dialogs.rs
 #, fuzzy
 msgid "their calendar"
-msgstr "მათ კალენდარში"
+msgstr "თავის კალენდარში"
 
 #. interface
 #: crates/ui-egui/src/dialogs.rs
 #, fuzzy
 msgid "their own calendars"
-msgstr "მათ საკუთარ კალენდრებში"
+msgstr "თავ-თავიანთ კალენდრებში"
 
 #. what a command says
 #: crates/engine/src/cmd/file.rs
@@ -25564,8 +25566,8 @@ msgstr[1] "გამეორება"
 #, fuzzy
 msgid "to {n} person"
 msgid_plural "to {n} people"
-msgstr[0] "პირებს: {n}"
-msgstr[1] "პირებს: {n}"
+msgstr[0] "{n} ადამიანს"
+msgstr[1] "{n} ადამიანს"
 
 #. interface
 #: crates/ui-egui/src/dialogs.rs
@@ -26177,13 +26179,13 @@ msgstr "{name} არ მიმაგრდა: მისი წაკითხ�
 #: crates/engine/src/cmd/contacts_remote.rs
 #, fuzzy
 msgid "{name} couldn't be added to {folder}{why}: it is kept on this computer."
-msgstr "{name} ვერ დაემატა {folder}{why}: ის ამ კომპიუტერზე ინახება."
+msgstr "{name} ვერ დაემატა საქაღალდეს {folder}{why}: ის ამ კომპიუტერზე ინახება."
 
 #. what a command says
 #: crates/engine/src/cmd/contacts_remote.rs
 #, fuzzy
 msgid "{name} couldn't be moved to {folder}{why}: it stays in {from}."
-msgstr "{name} ვერ გადავიდა {folder}-ში{why}: რჩება {from}-ში."
+msgstr "{name} ვერ გადავიდა საქაღალდეში {folder}{why}: რჩება საქაღალდეში {from}."
 
 #. interface
 #: crates/ui-egui/src/files.rs
@@ -26273,7 +26275,7 @@ msgstr "{name} საერთო საფოსტო ყუთია, რო�
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/MovePerson.kt crates/ui-egui/src/move_contacts.rs
 #, fuzzy
 msgid "{name} is already in {folder}."
-msgstr "{name} უკვე არის {folder}-ში."
+msgstr "{name} უკვე არის საქაღალდეში {folder}."
 
 #. interface
 #: crates/ui-egui/src/lib.rs
@@ -27322,8 +27324,8 @@ msgstr[1] "სხვა დრო შესთავაზა {n} ადამ�
 #, fuzzy
 msgid "{n} person without an address"
 msgid_plural "{n} people without an address"
-msgstr[0] "პირი მისამართის გარეშე: {n}"
-msgstr[1] "პირი მისამართის გარეშე: {n}"
+msgstr[0] "ადამიანი მისამართის გარეშე: {n}"
+msgstr[1] "ადამიანი მისამართის გარეშე: {n}"
 
 #. android
 #: apps/mailcraft-android/app/src/main/kotlin/work/mailcraft/android/ComposerScreen.kt
@@ -27583,7 +27585,7 @@ msgstr[1] "{people} და კიდევ {n}"
 #: crates/ui-egui/src/people_view.rs
 #, fuzzy
 msgid "{person}'s shared contacts"
-msgstr "{person}-ის გაზიარებული კონტაქტები"
+msgstr "გაზიარებული კონტაქტები: {person}"
 
 #. interface
 #: crates/ui-egui/src/sync_panel.rs
@@ -27810,8 +27812,8 @@ msgstr "• ადრესატი: {to}, თემა: „{subject}“"
 #, fuzzy
 msgid "…and {n} more — type to narrow it"
 msgid_plural "…and {n} more — type to narrow it"
-msgstr[0] "…and {n} more — type to narrow it"
-msgstr[1] "…and {n} more — type to narrow it"
+msgstr[0] "…და კიდევ {n} — აკრიფეთ სიის შესავიწროებლად"
+msgstr[1] "…და კიდევ {n} — აკრიფეთ სიის შესავიწროებლად"
 
 #. interface
 #: crates/ui-egui/src/credits.rs
