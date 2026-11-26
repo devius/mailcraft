@@ -36,6 +36,7 @@
 use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet};
 use std::sync::Arc;
 
+use mailcraft_model::contact_sync::ContactField;
 use mailcraft_model::sync::{DraftState, MovingOut, ServerMessage, same_category};
 use mailcraft_model::{AccountKind, Calendar, Event, Folder, FolderKind, Id, Mailbox, Message, Pending, Queued, RETURNED_LISTINGS, category_key};
 
@@ -54,6 +55,11 @@ pub(crate) struct Touched {
     changed_folders: BTreeSet<Id>,
     /// The contacts it added, changed or took away.
     changed_contacts: BTreeSet<Id>,
+    /// Of those it changed, the fields a server keeps that it changed (#1917): undone, only
+    /// those go back, and what a server changed since in the others stays.
+    contact_fields: BTreeMap<Id, BTreeSet<ContactField>>,
+    /// Of those it changed, the ones it put in another folder (#1144).
+    moved_contacts: BTreeSet<Id>,
     pending_added: HashSet<String>,
     pending_removed: HashSet<String>,
     /// What the change did to each account's own list of categories (#661).
@@ -105,6 +111,23 @@ impl Touched {
     /// Whether the change added, changed or took away the contact `id`.
     pub(crate) fn changed_contact(&self, id: Id) -> bool {
         self.changed_contacts.contains(&id)
+    }
+
+    /// The contacts the change added, changed or took away.
+    pub(crate) fn changed_contacts(&self) -> &BTreeSet<Id> {
+        &self.changed_contacts
+    }
+
+    /// The fields a server keeps that the change changed of contact `id`, when it changed it
+    /// (rather than adding or taking it away).
+    pub(crate) fn contact_fields(&self, id: Id) -> Option<&BTreeSet<ContactField>> {
+        self.contact_fields.get(&id)
+    }
+
+    /// Whether the change put contact `id` in another folder (#1144), rather than a refusal or a
+    /// move back done outside any step.
+    pub(crate) fn moved_contact(&self, id: Id) -> bool {
+        self.moved_contacts.contains(&id)
     }
 
     /// The events whose categories the change changed, with the categories it left them (#661).
@@ -209,6 +232,10 @@ pub(crate) fn touched(before: &Mailbox, after: &Mailbox) -> Touched {
             (Some((id, b)), Some((n, a))) if id == n => {
                 if !(Arc::ptr_eq(a, b) || a == b) {
                     t.changed_contacts.insert(**id);
+                    t.contact_fields.insert(**id, ContactField::changed(b, a));
+                    if a.folder != b.folder {
+                        t.moved_contacts.insert(**id);
+                    }
                 }
                 was.next();
                 is.next();
@@ -458,6 +485,10 @@ pub(crate) fn keep_in_step(mut out: Mailbox, touched: &Touched, now: &Mailbox, l
     let g: BTreeSet<Id> = graph_accounts(now).intersection(&graph_accounts(&out)).copied().collect();
     leave_alone(&mut out, touched, now, &g);
     if g.is_empty() {
+        // A message on its way onto another account's server now still is (a rule's move of mail
+        // that came since the change, #566).
+        queue(&mut out, now, &g);
+        waiting_as_now(&mut out, touched, now);
         return (out, Vec::new());
     }
     let mut said = Said::default();
@@ -481,7 +512,20 @@ pub(crate) fn keep_in_step(mut out: Mailbox, touched: &Touched, now: &Mailbox, l
     // What the server last gave of these is the server's, not the owner's to undo.
     server_lists(&mut out, touched, now, &g, &mut said);
     out.favorites_from_server = now.favorites_from_server.clone();
+    waiting_as_now(&mut out, touched, now);
     (out, said.lines(lang))
+}
+
+/// The rules waiting for the messages the change touched to be here whole are as they are now
+/// (#566): a move took them away, and moving the message back by undoing it or redoing a move
+/// doesn't bring them back, nor does it have a rule act a second time.
+fn waiting_as_now(out: &mut Mailbox, touched: &Touched, now: &Mailbox) {
+    for id in &touched.changed_messages {
+        let waiting = now.messages.get(id).and_then(|c| c.rules_waiting.clone());
+        if let Some(m) = out.messages.get_mut(id).filter(|m| m.rules_waiting != waiting) {
+            Arc::make_mut(m).rules_waiting = waiting;
+        }
+    }
 }
 
 /// Subscribed calendars and their events are the web's and the refresh's, never the change's to
@@ -1511,6 +1555,26 @@ fn queue(out: &mut Mailbox, now: &Mailbox, g: &BTreeSet<Id>) {
         Queued::PlaceMessage { account, message, .. } => out.messages.get(message).is_some_and(|m| m.account == *account && m.server.is_none()),
         _ => true,
     });
+    // A message that lies, after the undo, where it waits now to be made on another account's
+    // server, still waits to be: one moved out of a Microsoft account before its server had it,
+    // which stays where it was moved ([`fields`]), or one put there since the change, in any
+    // mailbox (#566). What the queue makes already is looked up, not searched for: tens of
+    // thousands may wait after a big folder was moved onto a server.
+    let mut placed: HashSet<Id> = queued
+        .iter()
+        .filter_map(|q| match q {
+            Queued::PlaceMessage { message, .. } => Some(*message),
+            _ => None,
+        })
+        .collect();
+    for q in now.queued.iter().filter(|q| !g.contains(&q.account())) {
+        if let Queued::PlaceMessage { account, message, .. } = q
+            && out.messages.get(message).is_some_and(|m| m.account == *account && m.server.is_none())
+            && placed.insert(*message)
+        {
+            queued.push(q.clone());
+        }
+    }
     for q in then.iter().filter(|q| g.contains(&q.account())) {
         if let Queued::CopyMessage { copy, .. } = q
             && out.messages.get(copy).is_some_and(|m| m.server.is_none())
